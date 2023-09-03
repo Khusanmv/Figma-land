@@ -1,0 +1,763 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Graphik;
+  src: url("../fonts/Graphik/Graphik-Medium.ttf");
+}
+
+
+.container {
+  height: auto;
+  max-width: 1600px;
+  width: 100%;
+  margin: auto;
+  padding: 15px;
+  background: rgba(24, 24, 24, 1);
+  //navbarstarts
+
+  & > .navbar {
+    height: auto;
+    max-width: 1600px;
+    width: 100%;
+    margin: auto;
+    & > .navbar__inner {
+      height: auto;
+      max-width: 1400px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: auto;
+      & > ul {
+        height: auto;
+        max-width: 400px;
+        width: 100%;
+        display: flex;
+        list-style: none;
+        & > li {
+          height: auto;
+          width: 150px;
+          & > a {
+            //styleName: Link;
+            display: block;
+            text-align: center;
+            color: rgba(255, 255, 255, 1);
+            text-decoration: none;
+            font-family: Graphik;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+          }
+        }
+      }
+
+      & > button {
+        width: 139px;
+        height: 52px;
+        margin-top: 10px;
+        border: 1px solid rgba(255, 255, 255, 1);
+        background-color: transparent;
+        font-family: Graphik;
+        font-size: 17px;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+
+  //navbarends
+
+  & > .header {
+    height: auto;
+    max-width: 1600px;
+    width: 100%;
+
+    & > .header__inner {
+      height: auto;
+      max-width: 1600px;
+      width: 100%;
+      margin: auto;
+
+      & > .header__Text {
+        max-width: 729px;
+        width: 100%;
+        margin: auto;
+        & > h1 {
+          //styleName: Headline;
+          font-family: Graphik;
+          font-size: 65px;
+          font-weight: 500;
+          margin-top: 65px;
+          text-align: center;
+          color: rgba(255, 255, 255, 1);
+        }
+        & > p {
+          //styleName: Sub Heading;
+          font-family: Graphik;
+          font-size: 15px;
+          font-weight: 400;
+          text-align: center;
+          margin-top: 35px;
+          color: rgba(255, 255, 255, 1);
+        }
+        & > .buttonpage {
+          margin: 45px auto;
+          height: auto;
+          width: 400px;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          & > .tryfor {
+            width: 178px;
+            height: 65px;
+            background: rgba(68, 82, 254, 1);
+            //styleName: Button;
+            font-family: Graphik;
+            font-size: 17px;
+            font-weight: 500;
+            text-align: center;
+            color: white;
+            outline: none;
+            border: none;
+            cursor: pointer;
+          }
+
+          & > .learn {
+            width: 178px;
+            height: 65px;
+            background: transparent;
+            //styleName: Button;
+            font-family: Graphik;
+            font-size: 17px;
+            font-weight: 500;
+            text-align: center;
+            color: white;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            border: 1px solid rgba(255, 255, 255, 1);
+          }
+        }
+      }
+      & > .header__img {
+        height: auto;
+        max-width: 1600px;
+        width: 100%;
+        & > img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  //headerends
+
+  & > .center {
+    height: auto;
+    max-width: 1600px;
+    width: 100%;
+    margin: 45px auto;
+
+    & > .center__inner {
+      height: auto;
+      max-width: 1400px;
+      width: 100%;
+      margin: 65px auto;
+
+      & > .center-inner__text {
+        max-width: 602px;
+        width: 100%;
+        margin: 85px auto;
+        & > h3 {
+          //styleName: Second Headline;
+          font-family: Graphik;
+          font-size: 52px;
+          font-weight: 400;
+          text-align: center;
+          color: rgba(255, 255, 255, 1);
+        }
+
+        & > p {
+          //styleName: Sub Heading;
+          font-family: Graphik;
+          font-size: 20px;
+          font-weight: 400;
+          text-align: center;
+          color: rgba(255, 255, 255, 1);
+          margin-top: 15px;
+        }
+      }
+
+      & > .center-inner__contents {
+        height: auto;
+        max-width: 1400px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        & > .center-content__imgtext {
+          height: auto;
+          max-width: 756px;
+          width: 100%;
+
+          & > img {
+            width: 100%;
+          }
+        }
+        & > .center-content__imgtext:last-child {
+          height: auto;
+          max-width: 310px;
+          width: 100%;
+
+          & > .cards {
+            max-width: 275px;
+            width: 100%;
+            padding: 16px;
+            margin: 15px auto;
+            & > .card-top {
+              height: auto;
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              & > .fa-utensils,
+              .fa-user-astronaut,
+              .fa-infinity {
+                color: rgba(2, 228, 192, 1);
+                font-size: 45px;
+              }
+              & > .ptag {
+                width: 180px;
+                & > span {
+                  //styleName: Title;
+                  font-family: Graphik;
+                  font-size: 25px;
+                  font-weight: 500;
+                  color: white;
+                }
+              }
+            }
+
+            & > .card-bottom {
+              height: auto;
+              width: 100%;
+
+              & > p {
+                //styleName: Paragraphe;
+                font-family: Graphik;
+                font-size: 16px;
+                font-weight: 400;
+                color: rgba(255, 255, 255, 1);
+                margin-top: 15px;
+              }
+            }
+          }
+        }
+
+        & > .center__inner-cards {
+          height: auto;
+          max-width: 1100px;
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-evenly;
+          & > .center-inner__cards {
+            max-width: 476px;
+            width: 100%;
+            height: 624.52px;
+            padding: 40px 0px 40px 0px;
+            border-radius: 10px;
+            background: linear-gradient(0deg, #ffffff, #ffffff),
+              linear-gradient(0deg, #d3d3d3, #d3d3d3);
+            margin-top: 25px;
+            & > h3 {
+              //styleName: Title;
+              font-family: Graphik;
+              font-size: 20px;
+              font-weight: 500;
+              line-height: 30px;
+              letter-spacing: 0.10000000149011612px;
+              text-align: center;
+            }
+
+            & > p {
+              //styleName: Paragraphe;
+              font-family: Graphik;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 24px;
+              letter-spacing: 0.20000000298023224px;
+              text-align: center;
+              padding-left: 35px;
+              padding-right: 35px;
+              padding-top: 35px;
+            }
+
+            & > button {
+              width: 157px;
+              height: 52px;
+              text-align: center;
+              display: block;
+              margin: 45px auto;
+              background: rgba(68, 82, 254, 1);
+              //styleName: Button;
+              font-family: Graphik;
+              font-size: 17px;
+              font-weight: 500;
+              line-height: 25px;
+              letter-spacing: 0.20000000298023224px;
+              text-align: center;
+              color: rgba(255, 255, 255, 1);
+              outline: none;
+              border: none;
+            }
+
+            & > .cards-img {
+              height: 255px;
+              max-width: 410px;
+              width: 100%;
+              margin: auto;
+              background: url("../images/png/MacbookPro.png") no-repeat center
+                center / cover;
+            }
+            & > .cards-imgs {
+              height: 255px;
+              max-width: 410px;
+              width: 100%;
+              margin: auto;
+              background: url("../images/png/BoardsNotifications-removebg-preview.png")
+                no-repeat center center / cover;
+            }
+          }
+        }
+      }
+
+      & > h3 {
+        font-family: Graphik;
+        font-size: 52px;
+        font-weight: 400;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+      }
+      & > p {
+        //styleName: Sub Heading;
+        font-family: Graphik;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+        margin-top: 15px;
+      }
+
+      & > .center__imgcardpart {
+        margin: 35px auto;
+        height: auto;
+        max-width: 1400px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+        & > .centerimgs {
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          height: auto;
+          max-width: 1200px;
+          width: 100%;
+        }
+
+        & > .center__imgcardparts {
+          margin: 35px auto;
+          height: auto;
+          max-width: 1400px;
+          width: 100%;
+          display: none;
+          align-items: center;
+          justify-content: space-evenly;
+          transition: all 1s;
+          & > .centerimgss {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: auto;
+            margin: auto;
+            max-width: 1200px;
+            width: 100%;
+          }
+        }
+      }
+      & > .center__imgcardpart:last-child {
+        margin: 35px auto;
+        height: auto;
+        max-width: 1400px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        & > .centerimgss {
+          height: auto;
+          max-width: 1200px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+        }
+
+        & > .btnseemore {
+          height: auto;
+          max-width: 1400px;
+          width: 100%;
+          margin: 35px auto;
+          & > button {
+            display: block;
+            margin: auto;
+            width: 176px;
+            height: 52px;
+            line-height: 52px;
+            border: 1px solid rgba(255, 255, 255, 1);
+            background-color: transparent;
+            //styleName: Button;
+            font-family: Graphik;
+            font-size: 17px;
+            font-weight: 500;
+            text-align: center;
+            color: rgba(255, 255, 255, 1);
+          }
+        }
+      }
+
+      
+    }
+
+    & > .center__partners {
+      height: auto;
+      max-width: 1400px;
+      width: 100%;
+      margin: 155px auto;
+
+      & > h3 {
+        //styleName: Second Headline;
+        font-family: Graphik;
+        font-size: 52px;
+        font-weight: 400;
+        color: #ffffff;
+        text-align: center;
+      }
+
+      & > p {
+        //styleName: Sub Heading;
+        font-family: Graphik;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+        color: #ffffff;
+      }
+
+      & > .brands {
+        height: auto;
+        max-width: 1200px;
+        width: 100%;
+        margin: 35px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        & > .brand__icons {
+          height: auto;
+          max-width: 150px;
+          width: 100%;
+          display: flex;
+          align-self: center;
+          justify-content: center;
+          & > img {
+            transition: all 1s;
+            cursor: pointer;
+          }
+
+          & > img:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+      & > .btnallpartners {
+        height: auto;
+        max-width: 1400px;
+        width: 100%;
+        & > button {
+          display: block;
+          margin: 20px auto;
+          width: 176px;
+          height: 52px;
+          border: 1px solid rgba(255, 255, 255, 1);
+          background-color: transparent;
+          //styleName: Button;
+          font-family: Graphik;
+          font-size: 17px;
+          font-weight: 500;
+          text-align: center;
+          color: rgba(255, 255, 255, 1);
+        }
+      }
+    }
+
+    & > .Testimonials {
+      height: auto;
+      max-width: 1400px;
+      width: 100%;
+      margin: 85px auto;
+
+      & > h3 {
+        //styleName: Second Headline;
+        font-family: Graphik;
+        font-size: 52px;
+        font-weight: 400;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+      }
+
+      & > .Testcards {
+        height: auto;
+        max-width: 950px;
+        width: 100%;
+        margin: 45px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        & > .cardsTest {
+          width: 430px;
+          height: 328px;
+          padding: 40px;
+          border-radius: 10px;
+          border: 1px solid #ffffff;
+          gap: 30px;
+          margin-top: 20px;
+          transition: all 1s;
+
+          & > ul {
+            height: 55px;
+            display: flex;
+            list-style: none;
+            & > li {
+              flex-grow: 1;
+              height: 100%;
+            }
+            & > li:last-child {
+              flex-grow: 8;
+              height: 100%;
+              & > h5 {
+                //styleName: Link;
+                font-family: Graphik;
+                font-size: 16px;
+                font-weight: 500;
+                color: rgba(255, 255, 255, 1);
+                text-align: left;
+              }
+              & > p {
+                //styleName: Subtitle;
+                font-family: Graphik;
+                font-size: 16px;
+                font-weight: 500;
+                color: rgba(255, 255, 255, 1);
+                text-align: left;
+              }
+            }
+          }
+
+          & > .cardtext {
+            width: 330px;
+            height: 168px;
+            margin-top: 20px;
+            & > p {
+              //styleName: Paragraphe;
+              font-family: Graphik;
+              font-size: 16px;
+              font-weight: 400;
+              text-align: left;
+              color: rgba(255, 255, 255, 1);
+            }
+          }
+        }
+
+        & > .cardsTest:hover {
+          transform: translateY(-15px);
+        }
+      }
+    }
+  }
+
+  & > .footer {
+    height: auto;
+    max-width: 1600px;
+    width: 100%;
+
+    & > .footer-top {
+      max-width: 1400px;
+      width: 100%;
+      height: auto;
+      border-radius: 33px;
+      background: rgba(52, 52, 52, 1);
+      margin: 35px auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 15px;
+
+      & > .footertop-inner {
+        height: auto;
+        max-width: 600px;
+        width: 100%;
+        margin-top: 14px;
+        & > img {
+          width: 100%;
+        }
+
+        & > .footertop-text {
+          max-width: 444px;
+          width: 100%;
+          float: right;
+          & > h4 {
+            //styleName: Second Headline;
+            font-family: Graphik;
+            font-size: 42px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 1);
+          }
+          & > button {
+            max-width: 232px;
+            width: 100%;
+            height: 52px;
+            background: rgba(68, 82, 254, 1);
+            box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
+            color: rgba(255, 255, 255, 1);
+            //styleName: Button;
+            font-family: Graphik;
+            font-size: 17px;
+            font-weight: 500;
+            display: block;
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+
+    & > .footer-under {
+      height: auto;
+      max-width: 1400px;
+      width: 100%;
+      margin: auto;
+      margin-top: 150px;
+      & > ul {
+        list-style: none;
+        height: auto;
+        max-width: 1400px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        & > li {
+          height: auto;
+          margin-top: 15px;
+          width: 250px;
+          & > h3 {
+            //styleName: Title;
+            font-family: Graphik;
+            font-size: 20px;
+            font-weight: 500;
+            cursor: pointer;
+            text-align: center;
+            margin-bottom: 15px;
+            color: rgba(255, 255, 255, 1);
+          }
+
+          & > .filter-li__div {
+            height: auto;
+            width: 100%;
+            margin-top: 15px;
+            & > a {
+              display: block;
+              text-align: center;
+              text-decoration: none;
+              //styleName: Link;
+              font-family: Graphik;
+              font-size: 16px;
+              font-weight: 500;
+              color: rgba(255, 255, 255, 1);
+            }
+          }
+        }
+        & > li:last-child {
+          height: auto;
+          width: 250px;
+          flex-grow: 2;
+          & > h3 {
+            //styleName: Title;
+            font-family: Graphik;
+            font-size: 20px;
+            font-weight: 500;
+            cursor: pointer;
+            text-align: center;
+            margin-bottom: 15px;
+            color: rgba(255, 255, 255, 1);
+          }
+
+          & > .filter-li__div {
+            height: auto;
+            width: 100%;
+            margin-top: 25px;
+            & > a {
+              display: block;
+              text-align: center;
+              text-decoration: none;
+              //styleName: Link;
+              font-family: Graphik;
+              font-size: 16px;
+              font-weight: 500;
+              color: rgba(255, 255, 255, 1);
+          
+
+            }
+          }
+          & > .filter-li__divs {
+            height: auto;
+            width: 300px;
+            margin: 25px auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+          & > .lasticons
+          {
+           
+            height: auto;
+            width: 80px;
+            & > a {
+              display: block;
+              text-align: center;
+              text-decoration: none;
+              //styleName: Link;
+              font-family: Graphik;
+              font-size: 33px;
+              font-weight: 500;
+              color: rgba(255, 255, 255, 1);
+          
+
+            }
+          }
+          }
+        }
+      }
+    }
+  }
+}
